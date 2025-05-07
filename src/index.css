@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&display=swap');
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  overflow-x: hidden;
+  background: var(--background);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbarHover);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: var(--scrollbarActive);
+}
+
+:root {
+  --navbarBackground: hsl(0, 0%, 100%);
+  --shadows: hsl(45, 5%, 85%);
+  --background: hsl(0, 0%, 100%);
+  --text: hsl(200, 15%, 8%);
+  --scrollbar: hsl(0, 0%, 72%);
+  --scrollbarHover: hsl(0, 0%, 52%);
+  --scrollbarActive: rgb(68, 68, 68);
+  --pagination: hsl(0, 0%, 80%);
+}
+
+[data-theme="dark-mode"] {
+  --navbarBackground: hsl(207, 26%, 27%);
+  --shadows: hsl(200, 15%, 8%);
+  --background: hsl(207, 26%, 17%);
+  --text: hsl(0, 0%, 100%);
+  --scrollbar: hsl(207, 26%, 37%);
+  --scrollbarHover: hsl(207, 26%, 57%);
+  --scrollbarActive: hsl(207, 26%, 47%);
+  --pagination: hsl(207, 26%, 27%)
+}

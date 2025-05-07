@@ -1,0 +1,48 @@
+.container {
+  margin: -7px -10px;
+  display: flex;
+  height: 80px;
+  width: 101.5%;
+  box-shadow: 2px 2px 10px var(--shadows);
+  background-color: var(--navbarBackground);
+  color: var(--text);
+}
+.heading {
+  margin: 15px 90px;
+  width: 400px;
+  cursor: pointer;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  margin: 25px 0 0 42%;
+  cursor: pointer;
+}
+.para {
+  margin: 25px 0 0 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.light {
+  background: url("../../assets/icons/moon-regular.svg") no-repeat center;
+  background-size: 100% 100%;
+  filter: invert();
+}
+.dark {
+  background: url("../../assets/icons/moon-solid.svg") no-repeat center;
+  background-size: 100% 100%;
+}
+@media only screen and (max-width: 376px) {
+  h1 {
+    margin: 25px 10px;
+    width: 200px;
+    font-size: 20px;
+  }
+  .icon {
+    margin: 25px 0 0 7%;
+  }
+  .container {
+    margin: -7px -10px;
+    width: 103.5%;
+  }
+}

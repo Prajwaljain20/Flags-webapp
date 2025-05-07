@@ -1,0 +1,23 @@
+.spinner {
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background:
+        radial-gradient(farthest-side, var(--scrollbar) 94%, #0000) top/8px 8px no-repeat,
+        conic-gradient(#0000 30%, var(--scrollbar));
+    -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
+    animation: spin 1s infinite linear;
+    margin: 13% 45%;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(1turn)
+    }
+}
+
+@media only screen and (max-width: 376px) {
+    .spinner {
+        margin: 50% 33%;
+    }
+}
