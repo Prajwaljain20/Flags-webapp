@@ -1,4 +1,6 @@
-# React + TypeScript + Vite
+# Flags API Webapp React + TypeScript + Vite
+
+Link: https://flags-react-cf101.web.app/
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
